@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*   ft_strlowercase.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anmugwab <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/16 17:34:07 by anmugwab          #+#    #+#             */
-/*   Updated: 2020/07/16 17:35:29 by anmugwab         ###   ########.fr       */
+/*   Created: 2020/07/17 15:10:08 by anmugwab          #+#    #+#             */
+/*   Updated: 2020/07/17 15:11:20 by anmugwab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char		*ft_strlowcase(char *str)
+char	*ft_strlowcase(char *str)
 {
     int i;
-    
+   
     i = 0;
 
-    while(str[i])
+    while (str[i])
     {
-        if((str[i] >= 'A') && (str[i] <= 'Z'))
+        if (str[i] >= 'A' && str[i] <= 'Z')
         {
-		   	str[i] += 32;
+			str[i] += 32;
         }
         
         i++;
-	}
+    }
     
-    return (str);      
+    return (str);     
 }
